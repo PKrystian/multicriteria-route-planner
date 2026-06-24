@@ -11,9 +11,10 @@ venv/
 .ruff_cache/
 .ipynb_checkpoints/
 
-# Project data and outputs (large / generated)
-data/
-results/
+# Project data and outputs (large / generated). Anchored to repo root so the
+# source package src/route_planner/data is not ignored.
+/data/
+/results/
 .env
 
 # IDE
