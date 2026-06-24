@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-criteria Route Planner</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Route Planner</h1>
+    <p class="hint" id="status">Click the map to set the <b>start</b>, then the <b>destination</b>.</p>
+
+    <label for="algorithm">Algorithm</label>
+    <select id="algorithm"></select>
+
+    <div id="weights-panel">
+      <h2>Criterion weights</h2>
+      <div id="weights"></div>
+      <label for="strength">Penalty strength (&lambda;): <span id="strength-val"></span></label>
+      <input type="range" id="strength" min="0" max="40" step="1" />
+    </div>
+
+    <div id="axes-panel" hidden>
+      <h2>Pareto axes</h2>
+      <p class="hint">Comma-separated: <code>distance</code> plus criterion names.</p>
+      <input type="text" id="axes" />
+    </div>
+
+    <div class="buttons">
+      <button id="find" disabled>Find route</button>
+      <button id="reset" class="secondary">Reset points</button>
+    </div>
+
+    <div id="metrics"></div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

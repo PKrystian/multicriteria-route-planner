@@ -1,0 +1,9 @@
+strength: 15
+
+weights:
+  travel: 1.0
+  congestion: 0.5
+  sinuosity: 0.0
+  elevation: 0.0
+  road_type: 0.0
+  scenic: 0.0

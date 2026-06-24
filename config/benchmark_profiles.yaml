@@ -1,0 +1,27 @@
+profiles:
+  - name: shortest
+    strength: 0
+    weights: {}
+  - name: fastest
+    strength: 15
+    weights:
+      travel: 1.0
+  - name: scenic
+    strength: 15
+    weights:
+      scenic: 1.0
+  - name: avoid_big_roads
+    strength: 15
+    weights:
+      road_type: 1.0
+  - name: low_climb
+    strength: 15
+    weights:
+      elevation: 1.0
+  - name: balanced
+    strength: 15
+    weights:
+      travel: 1.0
+      congestion: 0.5
+      scenic: 0.5
+      road_type: 0.3

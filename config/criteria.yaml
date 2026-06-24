@@ -1,0 +1,40 @@
+congestion:
+  default: 0.30
+  levels:
+    motorway: 0.20
+    trunk: 0.25
+    primary: 0.60
+    primary_link: 0.55
+    secondary: 0.50
+    tertiary: 0.40
+    residential: 0.30
+    living_street: 0.20
+    service: 0.20
+    track: 0.10
+
+road_type:
+  default: 0.30
+  penalties:
+    motorway: 0.90
+    motorway_link: 0.80
+    trunk: 0.70
+    trunk_link: 0.60
+    primary: 0.50
+    secondary: 0.35
+    tertiary: 0.20
+    unclassified: 0.20
+    residential: 0.15
+    living_street: 0.20
+    service: 0.40
+    track: 0.60
+
+sinuosity:
+  sense: min
+
+scenic:
+  scale_m: 250
+  tags:
+    tourism: ["viewpoint", "attraction"]
+    leisure: ["park", "nature_reserve"]
+    natural: ["water", "wood", "peak", "tree_row"]
+    landuse: ["forest", "meadow"]

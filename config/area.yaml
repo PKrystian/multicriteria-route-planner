@@ -1,0 +1,10 @@
+name: poznan_put
+description: Poznan University of Technology (Politechnika Poznanska), Piotrowo campus
+
+center:
+  lat: 52.4022
+  lon: 16.9499
+
+dist_m: 40000
+
+network_type: drive
